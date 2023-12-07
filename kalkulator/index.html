@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Kalkulator</title>
+    </head>
+    <body>
+        <div class="kalkulator">
+            <label for="angka-pertama">Angka Pertama Anda:</label><br />
+            <input type="number" id="angka-pertama" /><br />
+            <label for="operasi-perhitungan"
+                >Masukkan salah satu operasi (+, x, -, /):</label
+            ><br />
+            <input
+                type="text"
+                id="operasi-perhitungan"
+                autocomplete="off"
+            /><br />
+            <label for="angka-kedua">Angka Kedua Anda:</label><br />
+            <input type="number" id="angka-kedua" /><br />
+            <button type="button" onclick="kalkulator()">kirim</button>
+            <p id="hasil"></p>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

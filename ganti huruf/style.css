@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.keterangan {
+    font-size: 7em;
+    letter-spacing: 0.2em;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(
+        to right,
+        #7400b8,
+        #5390d9,
+        #56cfe1,
+        #80ffdb
+    );
+    cursor: default;
+}
