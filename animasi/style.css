@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.animasi {
+    width: 5rem;
+    aspect-ratio: 1;
+    background-color: red;
+    animation-duration: 1s;
+}
+
+@keyframes latar-belakang {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: green;
+    }
+}
