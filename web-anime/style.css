@@ -22,6 +22,29 @@ body {
     width: 20%;
     position: relative;
     transition: 0.3s ease-in-out;
+    animation-name: animasi-awal;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+}
+
+.pertama {
+    animation-delay: 0;
+}
+
+.kedua {
+    animation-delay: 0.5s;
+}
+
+.ketiga {
+    animation-delay: 1s;
+}
+
+.keempat {
+    animation-delay: 1.5s;
+}
+
+.kelima {
+    animation-delay: 2s;
 }
 
 .container__item:hover {
@@ -30,7 +53,7 @@ body {
 
 .container__item__video {
     width: 100%;
-    height: 100%;
+    height: 100.5%;
     aspect-ratio: 9 / 16;
     object-fit: cover;
     filter: brightness(50%);
@@ -39,7 +62,7 @@ body {
 .container__item__keterangan {
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -0.5%;
     left: 0;
     color: rgb(245, 245, 245);
     padding: 0 15px 2.5rem 15px;
@@ -53,4 +76,14 @@ body {
 
 .container__item__keterangan p {
     text-align: justify;
+}
+
+@keyframes animasi-awal {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
