@@ -18,13 +18,39 @@ body {
     flex-wrap: nowrap;
 }
 
-.container__video {
+.container__item {
     width: 20%;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+.container__item:hover {
+    width: 30%;
+}
+
+.container__item__video {
+    width: 100%;
     height: 100%;
     aspect-ratio: 9 / 16;
     object-fit: cover;
+    filter: brightness(50%);
 }
 
-.container__video:hover {
-    width: 30%;
+.container__item__keterangan {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgb(245, 245, 245);
+    padding: 0 15px 2.5rem 15px;
+    opacity: 0;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgb(0, 0, 0) 100%
+    );
+}
+
+.container__item__keterangan p {
+    text-align: justify;
 }
