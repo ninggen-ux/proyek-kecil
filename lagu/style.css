@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__item {
+    width: 5%;
+    height: 80%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.7s ease-in-out;
+}
+
+.pertama {
+    background-image: url(./img/love\ live.jpg);
+}
+
+.kedua {
+    background-image: url(./img/love\ live\ sunshine.jpg);
+}
+
+.ketiga {
+    background-image: url(./img/love\ live\ nijigasaki.jpg);
+}
+
+.keempat {
+    background-image: url(./img/love\ live\ superstar.jpg);
+}
+
+.container__item__fungsi {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.fungsi {
+    position: absolute;
+    left: 1.3rem;
+    bottom: 1.7rem;
+    font-size: 2.5em;
+}
+
+.fa-pause {
+    visibility: hidden;
+}
