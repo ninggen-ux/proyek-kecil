@@ -1,7 +1,8 @@
-const spek: { nama: string; umur: string; menyala: boolean } = {
-    nama: "Toyota",
-    umur: `${20} Tahun`,
-    menyala: true,
-};
+enum arahAngin {
+    utara = 3,
+    timur,
+    selatan,
+    barat,
+}
 
-console.log(spek);
+console.log(arahAngin.timur);
