@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const array = [<h1>Hello</h1>, <h1>World!!!</h1>]
+let x = (5 + 5) * 10;
+const contoh = <h1>{x > 10 ? "Lebih Besar" : "Lebih Kecil"}</h1>;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(array);
+root.render(contoh);
