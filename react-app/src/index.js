@@ -1,23 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-const batu = {
-    nama: "Batu",
-    tinggi: "tinggi 60cm",
-    beratBadan: "berat badan 652kg"
+
+let StartBaik = () => {
+    return <h1>Mobil di Start dengan baik</h1>
 }
 
-let Gaje = (props) => {
-    return <h2>Nama saya {props.batu.nama} dan saya memiliki {props.batu.beratBadan}!</h2>;
+let StartKurangBaik = () => {
+    return <h1>Mobil tidak menyala</h1>
 }
 
-let GajeDua = () => {
+let Mobil = (props) => {
+    let mobil = props.start;
+
     return (
         <>
-            <h1>Hallo!!!!!!!!!!</h1>
-            <Gaje batu={batu} />
+        {mobil ? <StartBaik/> : <StartKurangBaik/>}
         </>
-    )
+    );
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<GajeDua/>);
+root.render(<Mobil start={true} />);
