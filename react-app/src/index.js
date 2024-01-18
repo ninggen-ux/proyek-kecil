@@ -1,23 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-let StartBaik = () => {
-    return <h1>Mobil di Start dengan baik</h1>
+let Tulisan = (props) => {
+    return <ul><li>Saya adalah {props.buah}</li></ul>
 }
 
-let StartKurangBaik = () => {
-    return <h1>Mobil tidak menyala</h1>
-}
-
-let Mobil = (props) => {
-    let mobil = props.start;
-
+let Buah = () => {
+    let jenisBuah = ["Mangga", "Kiwi", "pisang"];
     return (
         <>
-        {mobil ? <StartBaik/> : <StartKurangBaik/>}
+            <h1>Buah!!!!!!!!!!!!!!!!!!!</h1>
+            {jenisBuah.map((item) => <Tulisan buah={item} />)}
         </>
     );
 }
 
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Mobil start={true} />);
+root.render(<Buah/>);
