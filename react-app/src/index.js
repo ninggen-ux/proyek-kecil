@@ -2,28 +2,33 @@ import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 
 function Nama() {
-    const [nama, setName] = useState("");
+    const [masukkan, setMasukkan] = useState({});
 
-    const submitHandler = (event) => {
+    const changeHandler = event => {
+        const nama = event.target.name;
+        const nilai = event.target.value;
+        setMasukkan(nilaiNilai => ({
+            ...nilaiNilai, [nama]: nilai
+        }))
+    }
+
+    const submitHandler = event => {
         event.preventDefault();
-        const namaMasuk = document.querySelector(".nama-masuk");
-        namaMasuk.textContent = `nama anda adalah: ${nama}`;
+        console.log(masukkan);
     }
 
     return (
-        <div>
-            <form onSubmit={submitHandler}>
-                <label>
-                    Masukkan Nama Anda:
-                <input
-                    type='text'
-                    value={nama}
-                    onChange={e => setName(e.target.value)} />
-                </label>
-                <input type='submit'/>
-            </form>
-            <h1 className='nama-masuk'>{""}</h1>
-        </div>
+        <form onSubmit={submitHandler}>
+            <label>
+                Masukkan nama anda:
+            </label>
+            <input type='text' name='Nama' onChange={changeHandler}/>
+            <label>
+                Masukkan nama belakang anda:
+            </label>
+            <input type='text' name='NamaBelakang' onChange={changeHandler}/>
+            <input type='submit'/>
+        </form>
     )
 }
 
