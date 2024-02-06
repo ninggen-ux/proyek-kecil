@@ -2,32 +2,15 @@ import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 
 function Nama() {
-    const [masukkan, setMasukkan] = useState({});
+    const [areaText, setAreaText] = useState("Tulisan ini ada di dalam text area");
 
-    const changeHandler = event => {
-        const nama = event.target.name;
-        const nilai = event.target.value;
-        setMasukkan(nilaiNilai => ({
-            ...nilaiNilai, [nama]: nilai
-        }))
-    }
-
-    const submitHandler = event => {
-        event.preventDefault();
-        console.log(masukkan);
+    const onChangeHandler = acara => {
+        setAreaText(acara.target.value);
     }
 
     return (
-        <form onSubmit={submitHandler}>
-            <label>
-                Masukkan nama anda:
-            </label>
-            <input type='text' name='Nama' onChange={changeHandler}/>
-            <label>
-                Masukkan nama belakang anda:
-            </label>
-            <input type='text' name='NamaBelakang' onChange={changeHandler}/>
-            <input type='submit'/>
+        <form>
+            <textarea value={areaText} onChange={onChangeHandler}/>
         </form>
     )
 }
