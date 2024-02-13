@@ -1,17 +1,22 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
+import img from './img/logo192.png';
 
 function Nama() {
-    const [areaText, setAreaText] = useState("Tulisan ini ada di dalam text area");
-
-    const onChangeHandler = acara => {
-        setAreaText(acara.target.value);
-    }
-
     return (
-        <form>
-            <textarea value={areaText} onChange={onChangeHandler}/>
-        </form>
+        <>
+            <img src={img} alt='react logo' width="100px"/>
+            <h1>
+                Hello World!!!
+            </h1>
+            <ul>
+                <li>Hello World!!!</li>
+                <li>Hello World!!!</li>
+                <li>Hello World!!!</li>
+                <li>Hello World!!!</li>
+                <li>Hello World!!!</li>
+            </ul>
+        </>
     )
 }
 
