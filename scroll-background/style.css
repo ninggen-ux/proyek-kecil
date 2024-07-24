@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.slide-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.satu {
+    background-image: url(./assets/1.jpeg);
+}
+
+.dua {
+    background-image: url(./assets/2.png);
+}
+
+.tiga {
+    background-image: url(./assets/3.png);
+}
+
+.empat {
+    background-image: url(./assets/4.png);
+}
+
+.lima {
+    background-image: url(./assets/5.png);
+}
