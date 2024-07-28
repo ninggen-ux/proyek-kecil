@@ -1,0 +1,15 @@
+@import "./main.scss";
+
+.main-container {
+    width: 100%;
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem;
+        .navbar__item {
+            @include font-setting($font-weight: $bold, $font-size: 1.5em);
+        }
+    }
+}
