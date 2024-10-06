@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "judul": "Hello!!!",
+        "content": "Hello!!!"
+    },
+
+    {
+        "id": 2,
+        "judul": "World!!!",
+        "content": "World!!!"
+    }
+]
